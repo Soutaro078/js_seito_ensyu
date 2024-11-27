@@ -8,7 +8,7 @@
             const $trigger = $elm.getElementsByTagName(obj.tagName);
             const triggerLen = $trigger.length;
             let index = 0;
-            //クラス内の関数はthisをつける
+            //クラス内の関数はthisをつける(今回は問が2個以上あるので，この形に)
             while(index < triggerLen) {
                 $trigger[index].addEventListener('click', (e) => this.clickHandler(e));
                 this.actionoUnko();
